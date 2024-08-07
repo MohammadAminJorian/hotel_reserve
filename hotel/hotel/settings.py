@@ -4,9 +4,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure--!-9!bmeq&%v0hqmwpxx+5yyqd4-rw&8ew0vj$x@ftrny6b7tg'
 
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = []
+
+
+# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -19,6 +22,8 @@ INSTALLED_APPS = [
     'jalali_date',
     "azbankgateways",
 
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -28,6 +33,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 ROOT_URLCONF = 'hotel.urls'
 
 TEMPLATES = [
@@ -84,7 +90,6 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
 LANGUAGE_CODE = 'fa'
-
 
 # import locale
 # locale.setlocale(locale.LC_ALL, "Persian_Iran.UTF-8")
