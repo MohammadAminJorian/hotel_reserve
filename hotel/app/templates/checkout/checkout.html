@@ -1,0 +1,254 @@
+﻿{% load static %}
+
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML5,CSS3,HTML,Template,multi-page,Atoli - Hotel & Resorts HTML Template">
+    <meta name="description" content="Atoli - Hotel & Resorts HTML Template">
+    <meta name="author" content="Barat Hadian">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.rtl.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/fonts/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/boxicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/meanmenu.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/jquery-ui.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/rtl.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'assets/datepicker-jalali/css/persianDatepicker-default.css' %}"/>
+
+    <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
+
+    <title> سایت رزرو هتل و اقامتگاه مسافرتی</title>
+</head>
+<body>
+
+
+<header class="top-header top-header-bg">
+    <div class="container">
+        <div class="row align-items-center"
+        <div class="col-lg-9 col-md-10">
+            <div class="header-right">
+                <ul>
+                    <li>
+                        <i class='bx bx-home-alt'></i>
+                        <a href="#">ایران ، تهران ، میدان آزادی ، خیابان 9</a>
+                    </li>
+                    <li>
+                        <i class='bx bx-phone-call'></i>
+                        <a href="tel:+1-(123)-456-7890">+1 (123) 456 7890</a>
+                    </li>
+                    <li>
+                        <i class='bx bx-envelope'></i>
+                        <a href="mailto: hello@atoli.com"> hello@atoli.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+
+<div class="navbar-area">
+
+    <div class="mobile-nav">
+        <img src="assets/img/logos/logo-3.png" alt="Logo">
+    </div>
+
+    <div class="main-nav nav-three">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light ">
+                <img src="{% static 'assets/img/logos/logo-3.png' %}" alt="Logo">
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">
+                                خانه
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:index' %}" class="nav-link ">
+                                        صفحه اصلی
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'app:about' %}" class="nav-link">
+                                درباره ما
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                صفحات
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:team' %}" class="nav-link">
+                                        تیم ما
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'app:frequently-questions' %}" class="nav-link">
+                                        سوالات متداول
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="{% url 'app:show_comment' %}" class="nav-link">
+                                        نطرات مشتریان
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="{% url 'app:terms_condition' %}" class="nav-link">
+                                        قوانین و ضوابط
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'app:privacy_policy' %}" class="nav-link">
+                                        حریم خصوصی
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                خدمات
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:services_1' %}" class="nav-link">
+                                        خدمات تفریحی ما
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{% url 'app:room' %}" class="nav-link">
+                                اتاق ها
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:room' %}" class="nav-link">
+                                        مشاهده اتاق ها
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'app:contact' %}" class="nav-link">
+                                تماس با ما
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="nav-btn">
+                        <a href="{% url 'app:room' %}" class="default-btn btn-bg-three">مشاهده اتاق ها</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<div class="inner-banner inner-bg7">
+    <div class="container">
+        <div class="inner-title">
+            <ul>
+                <li>
+                    <a href="{% url 'app:index' %}">خانه</a>
+                </li>
+                <li><i class='bx bx-chevron-left'></i></li>
+                <li> صورت حساب</li>
+            </ul>
+            <h3> صورت حساب</h3>
+        </div>
+    </div>
+</div>
+
+
+<section class="checkout-area pt-100 pb-70">
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="billing-details">
+                        <h3 class="title">جزئیات صورت حساب</h3>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>استان <span class="required">*</span></label>
+                                    <input type="text" name="state" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label> شهر / روستا <span class="required">*</span></label>
+                                    <input type="text" name="city" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-6">
+                                <div class="form-group">
+                                    <label>آدرس <span class="required">*</span></label>
+                                    <input type="text" name="address" required class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>آدرس ایمیل <span class="required"></span></label>
+                                    <input type="email" name="email"  class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>تلفن <span class="required">*</span></label>
+                                    <input type="text" name="phone" required class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="payment-box">
+                        <input value="بعدی" type="submit" href="#" class="order-btn border-0">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% include "base/footer.html" %}
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+{% if messages %}
+    {% for msg  in messages %}
+<!--        {% if msg.tags == 'error' %}-->
+        <div class="alert alert-danger d-flex " role="alert" align="center" style="height: 60px; width: auto;">
+                       <span class="" onclick="return this.parentNode.remove()"><sup>X</sup></span>
+            <p class="text-danger">{{ msg }}</p>
+        </div>
+<!--        {% else %}-->
+<!--        <div class="">-->
+<!--            <p>{{ msg }}</p>-->
+<!--            <span class="" onclick="return this.parentNode.remove()"><sup>X</sup></span>-->
+<!--        </div>-->
+<!--        {% endif %}-->
+
+    {% endfor %}
+{% endif %}
+
+

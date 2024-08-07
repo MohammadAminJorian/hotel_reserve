@@ -1,0 +1,205 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <title>سایت رزرو هتل و اقامتگاه مسافرتی</title>
+    <style>
+        /* استایل‌های اختصاصی برای چاپ */
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #print-section, #print-section * {
+                visibility: visible;
+            }
+            #print-section {
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="inner-banner inner-bg7">
+    <div class="container">
+        <div class="inner-title">
+            <ul>
+                <li>
+                    <a href="{% url 'app:index' %}">خانه</a>
+                </li>
+                <li><i class='bx bx-chevron-left'></i></li>
+                <li> صورت حساب</li>
+            </ul>
+            <h3> صورت حساب</h3>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<div class="col-lg-12 col-md-12">
+    <div class="billing-details">
+        <div class="mt-3">
+            <body dir="rtl">
+            <div id="print-section">
+                <div class="container-xl" style="margin-top: 100px;">
+                    <div class="row">
+                        <div class="col-3 text-center"></div>
+                        <div class="col-6 text-center"><h3 class="font-weight-bold">صورتحساب رزرو اتاق</h3></div>
+
+                    </div>
+                    <div class="row">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="text-center" colspan="11">مشخصات خریدار</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td colspan="11" class="text-right">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <p>نام : {{ namee }}</p>
+                                            <p>نام و نام خانوادگی : {{ familyy }}</p>
+                                        </div>
+                                        <div class="col-4"></div>
+                                        <div class="col-4">
+                                            <p> تلفن همراه: {{ phone }}</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="11" class="text-right">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <p>استان:{{ state }}</p>
+                                            <p>آدرس کامل: {{ address }}</p>
+                                        </div>
+                                        <div class="col-4"></div>
+                                        <div class="col-4">
+                                            <p>شهر/روستا : {{ city }} </p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                            <thead>
+                            <tr>
+                                <th class="text-center" colspan="11">مشخصات اتاق</th>
+                            </tr>
+                            </thead>
+                            <thead>
+                            <tr class="text-center">
+                                <th>شماره اتاق</th>
+                                <th>نام اتاق</th>
+                                <th>تاریخ ورود</th>
+                                <th>تاریخ خروج</th>
+                                <th>مجموع روز ها</th>
+                                <th>مبلغ روزانه</th>
+                                <th>جمع مبلغ کل</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="text-center">
+                                <td>{{ number }}</td>
+                                <td>{{ name }}</td>
+                                <td>{{ startdate }}</td>
+                                <td>{{ finishdate }}</td>
+                                <td>{{ total_day }}</td>
+                                <td>{{ price }}</td>
+                                <td>{{ total_price }}</td>
+                            </tr>
+                            <thead>
+                            <tr>
+                                <th class="text-center" colspan="11">غذا های خریداری شده</th>
+                            </tr>
+                            </thead>
+                            {% if food_reserve %}
+                            {% else %}
+                            <thead>
+                            <tr class="text-center">
+                                <th>غذایی خریداری نشده است</th>
+                            </tr>
+                            </thead>
+                            {% endif %}
+                            {% for res in food_reserve %}
+                            <thead>
+                            <tr class="text-center">
+                                <th>نام غذا</th>
+                                <th>نوع</th>
+                                <th>تعداد</th>
+                                <th> مبلغ</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="text-center">
+                                <td> {{ res.0 }}</td>
+                                <td>
+                                    {% if res.1 == '0' %}
+                                    صبحانه
+                                    {% elif res.1 == '1' %}
+                                    ناهار
+                                    {% else %}
+                                    شام
+                                    {% endif %}
+                                </td>
+                                <td>{{ res.4 }}</td>
+                                <td>{{ res.2 }}</td>
+                            </tr>
+                            {% endfor %}
+                            <tr>
+                                <td colspan="5" class="text-right">جمع کل</td>
+                                <th>{{ aaa }}</th>
+                            </tr>
+                            <tr>
+                                <th colspan="6" class="text-right"> ساعت ورود به اتاق 10:00 می باشد.<br> برای تحویل اتاق به همراه داشتن کارت ملی و شناسنامه الزامی است!<br> به همرا داشتن این کارت برای دریافت اتاق الزامی است!
+                                </th>
+                            </tr>
+                            <tr style="padding: 60px 0;">
+                                <td class="text-right">امضا شخص رزرو کننده</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </body>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="col-lg-12 col-md-12">
+    <div class="payment-box">
+        <input id="print-button" value="چاپ" type="button" class="order-btn border-0">
+        <input id="download-button" value="دانلود" type="button" class="order-btn border-0">
+    </div>
+</div>
+
+<script>
+    document.getElementById('print-button').addEventListener('click', function() {
+        window.print();
+    });
+
+    document.getElementById('download-button').addEventListener('click', function() {
+        const element = document.getElementById('print-section');
+        html2pdf().from(element).save();
+    });
+</script>
+
+{% include "base/footer.html" %}
+</body>
+</html>
+
+

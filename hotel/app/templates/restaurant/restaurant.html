@@ -1,0 +1,436 @@
+﻿{% load static %}
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML5,CSS3,HTML,Template,multi-page,Atoli - Hotel & Resorts HTML Template" >
+    <meta name="description" content="Atoli - Hotel & Resorts HTML Template">
+    <meta name="author" content="Barat Hadian">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.rtl.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/fonts/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/boxicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/meanmenu.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/jquery-ui.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/rtl.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'assets/datepicker-jalali/css/persianDatepicker-default.css' %}" />
+
+    <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // بررسی وجود فرم‌ها در صفحه
+        const forms = document.querySelectorAll('form');
+
+        forms.forEach(form => {
+            form.addEventListener('submit', function (event) {
+                // غیرفعال کردن دکمه سفارش برای فرم فعلی
+                const submitBtn = form.querySelector('input[type="submit"]');
+                submitBtn.disabled = true;
+            });
+        });
+    });
+</script>
+
+    <title>  سایت رزرو هتل و اقامتگاه مسافرتی</title>
+
+</head>
+<body>
+
+
+<header class="top-header top-header-bg">
+    <div class="container">
+        <div class="row align-items-center"
+            <div class="col-lg-9 col-md-10">
+                <div class="header-right">
+                    <ul>
+                        <li>
+                            <i class='bx bx-home-alt'></i>
+                            <a href="#">ایران ، تهران ، میدان آزادی ، خیابان 9</a>
+                        </li>
+                        <li>
+                            <i class='bx bx-phone-call'></i>
+                            <a href="tel:+1-(123)-456-7890">+1 (123) 456 7890</a>
+                        </li>
+                        <li>
+                            <i class='bx bx-envelope'></i>
+                            <a href="mailto: hello@atoli.com"> hello@atoli.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="navbar-area">
+
+    <div class="mobile-nav">
+            <img src="{% static 'assets/img/logos/logo-3.png' %}" alt="Logo">
+    </div>
+
+<div class="main-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light ">
+                    <img src="{% static 'assets/img/logos/logo-1.png' %}" alt="Logo">
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">
+                                خانه
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:index' %}" class="nav-link">
+                                        صفحه اصلی
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'app:about' %}" class="nav-link">
+                                درباره ما
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                صفحات
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:team' %}" class="nav-link">
+                                        تیم ما
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'app:frequently-questions' %}" class="nav-link">
+                                        سوالات متداول
+                                    </a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a href="{% url 'app:show_comment' %}" class="nav-link">
+                                        نطرات مشتریان
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="{% url 'app:terms_condition' %}" class="nav-link">
+                                        قوانین و ضوابط
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'app:privacy_policy' %}" class="nav-link">
+                                        حریم خصوصی
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                خدمات
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:services_1' %}" class="nav-link">
+                                        خدمات تفریحی ما
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{% url 'app:room' %}" class="nav-link">
+                                اتاق ها
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:room' %}" class="nav-link">
+                                        مشاهده اتاق ها
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'app:contact' %}" class="nav-link">
+                                تماس با ما
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="nav-btn">
+                        <a href="{% url 'app:room' %}" class="default-btn btn-bg-three">مشاهده اتاق ها</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="inner-banner inner-bg12">
+    <div class="container">
+        <div class="inner-title">
+            <ul>
+                <li>
+                    <a href="{% url 'app:index' %}">خانه</a>
+                </li>
+                <li><i class='bx bx-chevron-left'></i></li>
+                <li>رستوران</li>
+            </ul>
+            <h3>رستوران</h3>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="breakfast-area pt-100 pb-70">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>صبحانه</h2>
+            <span> 8:00 صبح - 12:00 عصر</span>
+        </div>
+        <div class="row pt-45">
+            {% for break in breakfast %}
+            <div class="col-lg-6">
+                <div class="restaurant-item">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 p-0">
+                            <div class="restaurant-img">
+                                <img src="{{ break.image.url }}" alt="Images">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 p-0">
+                            <div class="restaurant-content">
+                                <h3><a href="#">{{ break.name }}</a></h3>
+                           <form method="POST">
+                                {% csrf_token %}
+                                <div class="rounded-lg d-flex">
+                                    <input type="number" name="num_food" style=" border-radius: 10px;" placeholder="چه قدر از این غدا میخواهید ؟">
+                                <!-- <input type="submit" value="ثبت تعداد " style="width: 5rem; height: 2rem; margin-right: 1.3rem; border-radius: 10px; background: transparent; border: 1px black solid;">-->
+<!--                                <button style="width: 5rem; height: 2rem; margin-right: 1.3rem; border-radius: 10px; background: transparent; border: 1px black solid;">ثبت تعداد</button>-->
+                                </div>
+                                <p>
+                                    {{ break.description }}
+                                </p>
+                                <h4>{{ break.price }}</h4>
+                            </div>
+
+                                <input type="hidden" name="food" value="{{ break.id }}">
+                                <input type="submit" name="submit" value="سفارش" style="width: 10rem; height: 4rem; margin-right: 1.3rem; border-radius: 10px; background: transparent; border: 1px black solid;" >
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            صبحانه ای برای امروز ثبت نشده است
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+<div class="lunch-area pb-70">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>ناهار</h2>
+            <span> 12:30 صبح - 3:00 عصر</span>
+        </div>
+        <div class="row pt-45">
+            {% for lunch in lunch %}
+            <div class="col-lg-6">
+                <div class="restaurant-item">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 p-0">
+                            <div class="restaurant-img">
+                                <img src="{{ lunch.image.url }}" alt="Images">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 p-0">
+                            <div class="restaurant-content">
+                                <h3><a href="#">{{ lunch.name }}</a></h3>
+                                 <form method="POST" meth>
+                                {% csrf_token %}
+                                <div class="rounded-lg d-flex">
+                                    <input type="number" name="num_food" style=" border-radius: 10px; " placeholder="چه قدر از این غدا میخواهید ؟">
+                                    </div>
+                                <p>
+                                    {{ lunch.description }}
+                                </p>
+                                <h4>{{ lunch.price }}</h4>
+                            </div>
+                                <input type="hidden" name="food" value="{{ lunch.id }}">
+                                <input type="submit" value="سفارش" style="width: 10rem; height: 4rem; margin-right: 1.3rem; border-radius: 10px; background: transparent; border: 1px black solid;" >
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            ناهار ای برای امروز ثبت نشده است
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+<div class="dinner-area pb-70">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>شام</h2>
+            <span> 8:00 صبح - 11:00 عصر</span>
+        </div>
+        <div class="row pt-45">
+            {% for dinner in dinner %}
+            <div class="col-lg-6">
+                <div class="restaurant-item">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 p-0">
+                            <div class="restaurant-img">
+                                <img src="{{ dinner.image.url }}" alt="Images">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 p-0">
+                            <div class="restaurant-content">
+                                <h3><a href="#">{{ dinner.name }}</a></h3>
+                                 <form method="POST">
+                                {% csrf_token %}
+                                <div class="rounded-lg d-flex">
+                                    <input type="number" name="num_food" style=" border-radius: 10px;" placeholder="چه قدر از این غدا میخواهید ؟">
+                                </div>
+                                    <p>
+                                    {{ dinner.description }}
+                                </p>
+                                <h4>{{ dinner.price }}</h4>
+                            </div>
+                                <input type="hidden" name="food" value="{{ dinner.id }}">
+                                <input type="submit" value="سفارش" style="width: 10rem; height: 4rem; margin-right: 1.3rem; border-radius: 10px; background: transparent; border: 1px black solid;">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% empty %}
+            شام ای برای امروز ثبت نشده است
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="mb-3 d-flex flex-column align-items-center justify-content-center">
+    <div class="w-75 border-1 border border-radius-5 p-4">
+        <div class="d-flex flex-column align-items-center justify-content-center w-100">
+            <h2>غذای های سفارش داده شده</h2>
+            <table class="w-100">
+                <thead>
+                    <tr class="border">
+                        <td class="border-1 p-2 w-50">
+                            نام غذا
+                        </td>
+                        <td class="border-1 p-2 w-25">
+                            نوع
+                        </td>
+
+                        <td class="border-1 p-2 w-25">
+                             تعداد
+                        </td>
+                        <td class="border-1 p-2 w-25">
+                            قیمت
+                        </td>
+                    </tr>
+                </thead>
+                <tbody class="w-100">
+                {% if food_reserve %}
+                {% for res in food_reserve %}
+                <tr class="w-100 border border-1">
+                    <td class="border-1 p-2 w-50" style="width: 45%">
+                        {{ res.0 }}
+                    </td>
+                    <td class="border-1 p-2 w-25">
+                        {% if res.1 == '0' %}
+                            صبحانه
+                        {% elif res.1 == '1' %}
+                            ناهار
+                        {% else %}
+                            شام
+                        {% endif %}
+                    </td>
+                    <td class="border-1 p-2 w-25">
+                        {{ res.4 }} <!-- Displaying the food number -->
+                        </td>
+                    <td class="border-1 p-2 w-25">
+                        {{ res.2 }}
+                    </td>
+                    <td class="border-1 p-2">
+                        <form method="POST">
+                            {% csrf_token %}
+                            <input type="hidden" name="delete" value="{{ res.3 }}">
+                            <button type="submit" class="bg-transparent border-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash text-danger" viewBox="0 0 16 16">
+                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                                    <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor%}
+                {% endif %}
+                </tbody>
+            </table>
+            <div class="mt-3">
+                <h4>قیمت کل : {{ total_food_price_with_num }} تومان</h4>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center">
+            <form method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="submit" value="True">
+                {% if total_food_price_with_num %}
+                <input type="submit" value="اتمام سفارش" style="width: 12rem; height: 6rem; margin-right: 1.3rem; border-radius: 10px; background: transparent; border: 1px black solid;">
+                {% else %}
+                <input type="submit" value="غذا نمیخواهم (اتمام سفارش)" style="width: 14rem; height: 6rem; margin-right: 1.3rem; border-radius: 10px; background: transparent; border: 1px black solid;">
+                {% endif %}
+            </form>
+        </div>
+    </div>
+</div>
+{% include "base/footer.html" %}
+
+</body>
+</html>
+
+
+
+
+
+

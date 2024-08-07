@@ -1,0 +1,563 @@
+﻿
+{% load static %}
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML5,CSS3,HTML,Template,multi-page,Atoli - Hotel & Resorts HTML Template" >
+    <meta name="description" content="Atoli - Hotel & Resorts HTML Template">
+    <meta name="author" content="Barat Hadian">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.rtl.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/fonts/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/boxicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/meanmenu.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/jquery-ui.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/rtl.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'assets/datepicker-jalali/css/persianDatepicker-default.css' %}" />
+
+    <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
+    <title>  سایت رزرو هتل و اقامتگاه مسافرتی</title>
+</head>
+<body>
+
+<header class="top-header top-header-bg">
+    <div class="container">
+        <div class="row align-items-center"
+            <div class="col-lg-9 col-md-10">
+                <div class="header-right">
+                    <ul>
+                        <li>
+                            <i class='bx bx-home-alt'></i>
+                            <a href="#">ایران ، تهران ، میدان آزادی ، خیابان 9</a>
+                        </li>
+                        <li>
+                            <i class='bx bx-phone-call'></i>
+                            <a href="tel:+1-(123)-456-7890">+1 (123) 456 7890</a>
+                        </li>
+                        <li>
+                            <i class='bx bx-envelope'></i>
+                            <a href="mailto: hello@atoli.com"> hello@atoli.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="navbar-area">
+
+    <div class="mobile-nav">
+            <img src="{% static 'assets/img/logos/logo-1.png' %}" alt="Logo">
+    </div>
+
+    <div class="main-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light ">
+                    <img src="{% static 'assets/img/logos/logo-1.png' %}" alt="Logo">
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                خانه
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:index' %}" class="nav-link active">
+                                        صفحه اصلی
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'app:about' %}" class="nav-link">
+                                درباره ما
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                صفحات
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:team' %}" class="nav-link">
+                                        تیم ما
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'app:frequently-questions' %}" class="nav-link">
+                                        سوالات متداول
+                                    </a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a href="{% url 'app:show_comment' %}" class="nav-link">
+                                        نطرات مشتریان
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="{% url 'app:terms_condition' %}" class="nav-link">
+                                        قوانین و ضوابط
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'app:privacy_policy' %}" class="nav-link">
+                                        حریم خصوصی
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                خدمات
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:services_1' %}" class="nav-link">
+                                        خدمات تفریحی ما
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{% url 'app:room' %}" class="nav-link">
+                                اتاق ها
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:room' %}" class="nav-link">
+                                        مشاهده اتاق ها
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'app:contact' %}" class="nav-link">
+                                تماس با ما
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="nav-btn">
+                        <a href="{% url 'app:room' %}" class="default-btn btn-bg-one border-radius-5">مشاهده اتاق ها</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<div class="banner-area">
+    <div class="container">
+        <div class="banner-content">
+            <h1>برای رزرو یک اتاق مناسب یک هتل و استراحتگاه را پیدا کنید</h1>
+            <p>
+                تجارت هتل و استراحتگاه یکی از بهترین و وفادارترین تجارت در بازار جهانی است. ما آژانسی هستیم که به شما کمک می کنیم اتاق خوبی را در یک کاخ مناسب با قیمت مناسب رزرو کنید.
+            </p>
+            <div class="banner-btn">
+                <a href="{% url 'app:room' %}" class="default-btn btn-bg-one border-radius-5">اتاق های پیشنهادی</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="about-area pt-100 pb-70">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img">
+                    <img src="{% static 'assets/img/about/about-img.jpg' %}" alt="Images">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <div class="section-title">
+                        <span>درباره ما</span>
+                        <h2>ما بیش از 20+ نمایشگاه جهانی هستیم. و ما دلایل زیادی برای انتخاب ما از دیگران داریم</h2>
+                        <p>
+                            لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است. لورم ایپسوم ساختار چاپ و متن را در بر می گیرد. لورم ایپسوم استاندارد صنعت بوده است.
+                        </p>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="flaticon-restaurant"></i>
+                            <div class="content">
+                                <h3>امکانات رستوران</h3>
+                                <p>
+                                    ما یکی از بهترین شرکت ها در بازار جهانی هستیم و برای همه راهنماهای خود و همه مهمانان خود امکانات رستوران داریم.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="flaticon-wifi-signal-1"></i>
+                            <div class="content">
+                                <h3>وای فای رایگان</h3>
+                                <p>
+                                    این مکانی است که در آن یک منطقه وای-فای رایگان با قیمت مناسب دریافت خواهید کرد و این به شما کمک می کند تا لحظات خوش رنگی را رقم بزنید
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="{% url 'app:about' %}" class="default-btn btn-bg-one border-radius-5">ادامه خواندن</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="services-area pb-70">
+    <div class="container">
+        <div class="section-title text-center">
+            <span>خدمات ما</span>
+            <h2>خدمات ما برای رزرو اتاق </h2>
+        </div>
+        <div class="services-slider owl-carousel owl-theme pt-45">
+            <div class="services-item">
+                <i class="flaticon-hotel"></i>
+                <h3>رزرو اتاق هتل در مکانهای عالی</h3>
+                <p>توضیحات .</p>
+            </div>
+            <div class="services-item">
+                <i class="flaticon-resort"></i>
+                <h3>رزرو محل اقامت در مکانی مناسب</h3>
+                <p>توضیحات.</p>
+            </div>
+            <div class="services-item">
+                <i class="flaticon-buildings"></i>
+                <h3>رزرو تالار عروسی در مکان مناسب</h3>
+                <p>توضیحات.</p>
+            </div>
+            <div class="services-item">
+                <i class="flaticon-calendar"></i>
+                <h3>برای اطمینان در دسترس بودن ، رزرو کنید</h3>
+                <p>توضیحات.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="reservation-area section-bg pt-100 pb-70">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="reservation-content">
+                    <div class="section-title">
+                        <h2> شما به راحتی چیزهایی را که باعث خوشبختی و شادی شما می شود ، ذخیره می کنی</h2>
+                        <p>
+                            توضیحات.
+                        </p>
+                    </div>
+                    <a href="{% url 'app:room' %}" class="default-btn btn-bg-one border-radius-5">رزرو سریع</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="reservation-img">
+                    <img src="{% static 'assets/img/reservation/reservation-img.jpg' %}" alt="Images">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="specialty-area pt-100 pb-70">
+    <div class="container">
+        <div class="section-title text-center">
+            <span>تخصص</span>
+            <h2>بخشهای تخصصی ما و سایر جزئیات</h2>
+        </div>
+        <div class="row pt-45 align-items-center">
+            <div class="col-lg-6 col-xxl-7">
+                <div class="specialty-img">
+                    <img src="{% static 'assets/img/specialty/specialty-img1.jpg' %}" alt="Images">
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-5">
+                <div class="specialty-list">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="specialty-list-card">
+                                <i class="flaticon-decoration"></i>
+                                <h3>دکوراسیون خوب</h3>
+                                <p>ما در مورد اتاق خود و همه تزئینات تفرجگاه بسیار مراقب هستیم. بنابراین ، ما را امتحان کنید.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="specialty-list-card">
+                                <i class="flaticon-champagne-glass"></i>
+                                <h3>رستوران مجلل</h3>
+                                <p>به راحتی می توانید از دسترسی رایگان به یک رستوران سوپراستار با قیمت مناسب لذت ببرید.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="specialty-list-card">
+                                <i class="flaticon-fireworks"></i>
+                                <h3>5 ستاره</h3>
+                                <p>آتولی یک آژانس شناخته شده است و آژانس یکی از بهترین آژانس های 5 ستاره است. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="room-area pt-100 pb-70 section-bg">
+    <div class="container">
+        <div class="section-title text-center">
+            <span>اتاق های ویژه</span>
+            <h2>اتاق ها ویژه برای رزرو </h2>
+        </div>
+            <div class=" row flex flex-col pt-45   ">
+                {% for room_suggested in room_suggested %}
+                <div class="col-lg-4 col-md-6 ">
+                <div class="room-card">
+                    <a href="{% url 'app:room_details' room_suggested.id %}">
+                        <img src="{{ room_suggested.image.url }}"style=" width: 400px; height:400px " alt="Images">
+                    </a>
+                    <div class="content">
+                        <h3><a href="{% url 'app:room_details' room_suggested.id %}">{{ room_suggested.name }}</a></h3>
+                            <ul>
+                                <li class="text-color"> {{ room_suggested.price }} تومان</li>
+                                <li class="text-color">در هر شب</li>
+
+                            </ul>
+                            <ul>
+                                <li class="text-color">طبقه {{ room_suggested.floor }}</li>
+                                <li class="text-color"> ظرفیت {{ room_suggested.capacity }} نفر</li>
+                            </ul>
+                        <div class="rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star-half'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            اتاقی وجود ندارد
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+
+<div class="faq-area pt-100 pb-70 section-bg">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-xxl-7">
+                <div class="faq-img">
+                    <img src="{% static 'assets/img/faq/faq-img1.jpg' %}" alt="Images">
+                </div>
+            </div>
+            <div class="col-lg-6 col-xxl-5">
+                <div class="faq-content">
+                    <div class="section-title">
+                        <h2>بیایید یک سوال رایگان شروع کنیم و یک پشتیبانی سریع دریافت کنیم که به شما در شناختن ما کمک می کند</h2>
+                    </div>
+                    <div class="faq-accordion">
+                        <ul class="accordion">
+                            <li class="accordion-item">
+                                <a class="accordion-title" href="javascript:void(0)">
+                                    <i class='bx bx-plus'></i>
+                                    چگونه می توان اتاق یا اقامتگاه را رزرو کرد؟
+                                </a>
+                                <div class="accordion-content">
+                                    <p>
+                                        توضیحات.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <a class="accordion-title" href="javascript:void(0)">
+                                    <i class='bx bx-plus'></i>
+                                    چگونه می توان اتاق یا اقامتگاه را رزرو کرد؟
+                                </a>
+                                <div class="accordion-content">
+                                    <p>
+                                        توضیحات.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <a class="accordion-title" href="javascript:void(0)">
+                                    <i class='bx bx-plus'></i>
+                                    چگونه می توان اتاق یا اقامتگاه را رزرو کرد؟
+                                </a>
+                                <div class="accordion-content">
+                                    <p>
+                                        توضیحات.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <a class="accordion-title " href="javascript:void(0)">
+                                    <i class='bx bx-plus'></i>
+                                    چگونه می توان اتاق یا اقامتگاه را رزرو کرد؟
+                                </a>
+                                <div class="accordion-content">
+                                    <p>
+                                        توضیحات.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="team-area pt-100 pb-70">
+    <div class="container">
+        <div class="section-title text-center">
+            <span>تیم ما</span>
+            <h2>بیایید با اعضای تیم ویژه خود دیدار کنیم</h2>
+        </div>
+        <div class="team-slider owl-carousel owl-theme pt-45">
+            <div class="team-item">
+
+                    <img src="{% static 'assets/img/team/team-img1.jpg' %}" alt="Images">
+
+                <div class="content">
+                    <h3>تام شومات</h3>
+                    <span>مدیر</span>
+                    <ul class="social-link">
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-pinterest-alt'></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="team-item">
+
+                    <img src="{% static 'assets/img/team/team-img2.jpg' %}" alt="Images">
+
+                <div class="content">
+                    <h3>تام شومات</h3>
+                    <span>مدیر</span>
+                    <ul class="social-link">
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-pinterest-alt'></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="team-item">
+                    <img src="{% static 'assets/img/team/team-img3.jpg' %}" alt="Images">
+                <div class="content">
+                    <h3>تام شومات</h3>
+                    <span>مدیر</span>
+                    <ul class="social-link">
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-pinterest-alt'></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="team-item">
+                    <img src="{% static 'assets/img/team/team-img4.jpg' %}" alt="Images">
+                <div class="content">
+                    <h3>تام شومات</h3>
+                    <span>مدیر</span>
+                    <ul class="social-link">
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"><i class='bx bxl-pinterest-alt'></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% include "base/footer.html" %}
+
+
+</body>
+</html>
+

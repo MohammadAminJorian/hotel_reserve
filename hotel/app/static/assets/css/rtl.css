@@ -1,0 +1,811 @@
+body {
+	direction: rtl;
+	text-align: right
+}
+
+
+
+
+[type="email"], [type="number"], [type="tel"], [type="url"] {
+	direction: rtl;
+}
+.contact-form .with-errors {
+	float: right;
+}
+.coming-soon-area .coming-soon-content #timer {
+          direction: ltr;
+}
+
+
+
+
+
+.header-right {
+
+}
+.header-right ul li a {
+
+}
+.header-right ul li i {
+
+}
+.header-right ul li {
+
+}
+.header-right ul li:last-child {
+
+}
+.header-right ul li::before {
+
+}
+.language-list {
+
+}
+.language-list .nice-select {
+
+}
+.language-list .nice-select::after {
+
+}
+.language-list .nice-select .option {
+
+}
+.navbar-brand {
+	margin-right: 0
+}
+.navbar-area .main-nav .navbar .navbar-nav {
+	margin-right: auto;
+	margin-left: 0
+}
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+	right: 0;
+	left: auto;
+	text-align: right
+}
+.navbar-area .main-nav .navbar .navbar-nav .nav-item .dropdown-menu .nav-item .dropdown-menu {
+	right: 100%
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li a::before {
+	left: unset;
+	right: 0
+}
+.main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+	right: 100%;
+	top: 20px;
+	left: auto
+}
+.option-item .language-nav-list {
+	margin-left: unset
+}
+.option-item .language-nav-list .nice-select {
+	text-align: left!important
+}
+.option-item .language-nav-list .nice-select::after {
+	left: 10px;
+	right: auto
+}
+.option-item .language-nav-list .nice-select .option {
+	text-align: right
+}
+.option-item:last-child {
+	margin-left: 0
+}
+.side-nav-responsive .dot-menu {
+	right: auto;
+	left: 60px
+}
+.side-nav-responsive .side-nav-inner .side-nav .side-item:last-child {
+	padding-right: 0;
+	padding-left: 15px
+}
+.side-nav-responsive .side-nav-inner .side-nav .side-item {
+	padding-right: 5px;
+	padding-left: unset
+}
+.side-nav-responsive .container .container {
+	left: -20px;
+	right: auto;
+	margin-right: auto;
+	margin-left: unset
+}
+.sidebar-modal .sidebar-modal-inner {
+
+}
+.sidebar-modal.active .sidebar-modal-inner {
+
+}
+.sidebar-modal .sidebar-header .close-btn {
+
+}
+.sidebar-modal .contact-us ul li {
+
+}
+.sidebar-modal .contact-us ul li i {
+
+}
+.sidebar-modal .sidebar-room-feed .sidebar-room-content li {
+
+}
+.sidebar-modal .sidebar-room-feed .sidebar-room-content li img {
+
+}
+.side-nav-responsive .side-nav-inner .side-nav .option-item .language-option-list {
+	margin-left: unset;
+	margin-right: -25px
+}
+.side-nav-responsive .side-nav-inner .side-nav .option-item .language-option-list .nice-select {
+	text-align: left!important
+}
+.side-nav-responsive .side-nav-inner .side-nav .option-item .language-option-list .nice-select::after {
+	left: 10px;
+	right: auto
+}
+.side-nav-responsive .side-nav-inner .side-nav .option-item .language-option-list .nice-select .option {
+	text-align: right
+}
+.banner-area::before {
+	background-image: linear-gradient(to right, #ffffff00, #ffffff85)
+}
+.banner-content {
+	margin-left: auto;
+	margin-right: unset
+}
+.banner-form {
+
+}
+.banner-form .form-group .nice-select:after {
+
+}
+.banner-form .form-group .nice-select {
+
+}
+.banner-form .form-group .nice-select .list .option {
+
+}
+.banner-form .form-group i {
+
+}
+.banner-form .default-btn {
+
+}
+.banner-img {
+	margin-left: auto;
+	margin-right: unset
+}
+.banner-img::before {
+	left: -30px;
+	right: auto
+}
+.banner-another {
+	margin-right: auto;
+	margin-left: unset
+}
+.banner-another .banner-shape {
+	right: -70px;
+	left: auto
+}
+.banner-max {
+	margin-left: auto;
+	margin-right: auto
+}
+.about-content {
+	margin-right: 30px;
+	margin-left: auto
+}
+.about-content ul li {
+	padding-right: 70px;
+	padding-left: unset
+}
+.about-content ul li i {
+	left: auto;
+	right: 0
+}
+.about-content ul li .content p {
+	max-width: 400px
+}
+.about-img {
+	margin-right: auto;
+	margin-left: unset
+}
+.about-img::before {
+	right: -70px;
+	left: auto
+}
+.about-content .about-form .form-group i {
+	right: auto;
+	left: 8px
+}
+.about-content .about-form .form-group .nice-select:after {
+	top: 45%;
+	left: 15px;
+	right: auto
+}
+.about-img-2 {
+	margin-right: auto;
+	margin-left: unset
+}
+.about-content .about-form .form-group .nice-select {
+	text-align: right!important;
+	padding-left: 40px;
+	padding-right: 15px
+}
+.about-content .about-form .form-group .nice-select .list .option {
+	text-align: right
+}
+.ability-img::before {
+
+}
+.ability-img-2::before {
+
+}
+.specialty-img::before {
+
+}
+.specialty-list .specialty-list-card {
+
+}
+.specialty-list .specialty-list-card i {
+
+}
+.room-card .content .rating {
+
+}
+.room-card .content ul li {
+
+}
+.room-card .content ul li::before {
+
+}
+.room-card .content ul li:last-child {
+
+}
+.room-item .content .book-btn {
+
+}
+.room-item .content ul li {
+
+}
+.room-item .content ul li::before {
+
+}
+.room-item .content ul li:last-child {
+
+}
+.room-card-two .room-card-img {
+
+}
+.room-card-two .room-card-content .rating {
+
+}
+.room-card-two .room-card-content ul li {
+
+}
+.room-card-two .room-card-content ul li:last-child {
+
+}
+.room-card-two .room-card-content ul li i {
+
+}
+.book-img-2::before {
+
+}
+.booking-form .form-group i {
+
+}
+.booking-form .form-group .nice-select:after {
+
+}
+.booking-form .form-group .nice-select {
+
+}
+.booking-form .form-group .nice-select .list .option {
+
+}
+.room-details-title ul li {
+
+}
+.room-details-title ul li:last-child {
+
+}
+.faq-content .faq-accordion .accordion .accordion-title {
+
+}
+.faq-content .faq-accordion .accordion .accordion-title i {
+
+}
+.faq-content .faq-accordion .accordion {
+
+}
+.service-item-two .content {
+	padding-right: 100px;
+	padding-left: unset
+}
+.restaurant-item .restaurant-img {
+	padding-right: 15px;
+	padding-left: unset
+}
+.service-item-two i {
+	right: 30px;
+	left: auto
+}
+.services-bar-widget .side-bar-list ul li a i {
+	left: 20px;
+	right: auto
+}
+.service-article .service-article-content .blockquote::after {
+	right: 0;
+	left: auto
+}
+.service-article .service-facility-content ul li i {
+	margin-left: 10px;
+	margin-right: unset
+}
+.side-bar-widget .widget-popular-post .item .thumb {
+	float: right;
+	margin-left: 15px;
+	margin-right: unset
+}
+.side-bar-widget .title {
+	padding: 20px 20px 0
+}
+.testimonials-item ul li {
+
+}
+.testimonials-item ul li img {
+
+}
+.testimonials-img {
+
+}
+.testimonials-img .content {
+
+}
+.testimonials-img-two {
+
+}
+.testimonials-img-two::before {
+
+}
+.book-img .book-shape {
+
+}
+.testimonials-content {
+
+}
+.side-bar-form .form-group i {
+
+}
+.side-bar-form .form-group .nice-select:after {
+
+}
+.side-bar-form .form-group .nice-select {
+
+}
+.side-bar-form .form-group .nice-select .list .option {
+
+}
+.team-card .social-link {
+	left: 30px;
+	right: auto
+}
+.blog-card .blog-img {
+	padding-right: 15px;
+	padding-left: unset
+}
+.blog-item .content ul li {
+
+}
+.blog-item .content ul li:last-child {
+
+}
+.search-widget .search-form button {
+	left: 0;
+	right: auto
+}
+.blog-article .blog-article-title ul li {
+	margin-left: 30px;
+	margin-right: unset
+}
+.blog-article .blog-article-title ul li:last-child {
+	margin-left: 0
+}
+.blog-article .article-content .blockquote::after {
+	right: 0;
+	left: auto
+}
+.blog-article .comments-wrap ul li {
+	padding-right: 95px;
+	padding-left: 30px
+}
+.blog-article .comments-wrap ul li img {
+	right: 30px;
+	left: auto
+}
+.blog-article .comments-wrap ul li a {
+	left: 30px;
+	right: auto
+}
+.footer-widget .footer-list-contact li {
+	padding-right: 30px;
+	padding-left: unset
+}
+.footer-widget .footer-list-contact li i {
+	margin-left: 5px;
+	margin-right: unset;
+	right: 0;
+	left: auto
+}
+.footer-widget.pl-5, .footer-widget.px-5 {
+	padding-right: 3rem!important;
+	padding-left: unset!important
+}
+.text-align1 {
+	text-align: right
+}
+.text-align2 {
+	text-align: left
+}
+#toTop {
+	left: 20px;
+	right: auto
+}
+.billing-details .form-group .nice-select:after {
+	left: 15px;
+	right: auto
+}
+.billing-details .form-group .nice-select {
+	text-align: right!important;
+	padding-left: 40px;
+	padding-right: 18px
+}
+.billing-details .form-group .nice-select .list .option {
+	text-align: right
+}
+.billing-details .form-check .form-check-label {
+
+}
+.payment-box .payment-method p [type=radio]:checked+label {
+	padding-right: 27px;
+	padding-left: unset
+}
+.payment-box .payment-method p [type=radio]:checked+label::before {
+	right: 0;
+	left: auto
+}
+.payment-box .payment-method p [type=radio]:checked+label::after {
+	right: 3px;
+	left: auto
+}
+.payment-box .payment-method p [type=radio]:not(:checked)+label::before {
+	right: 0;
+	left: auto
+}
+.payment-box .payment-method p [type=radio]:not(:checked)+label::after {
+	right: 0;
+	left: auto
+}
+.payment-box .payment-method p [type=radio]:not(:checked)+label {
+	padding-right: 27px;
+	padding-left: unset
+}
+.payment-box .order-btn::before {
+	left: auto;
+	right: 0
+}
+.payment-box .order-btn::after {
+	right: auto;
+	left: 0
+}
+.payment-box .order-btn:hover::before {
+	right: auto;
+	left: 0
+}
+.payment-box .order-btn:hover::after {
+	left: auto;
+	right: 0
+}
+.contact-form .form-group.checkbox-option #chb2 {
+	left: auto;
+	right: 0
+}
+.contact-form .form-group.checkbox-option p {
+	padding-right: 25px;
+	padding-left: unset
+}
+.contact-content .contact-img::before {
+	right: -30px;
+	left: auto
+}
+.contact-item ul li {
+	padding-right: 85px;
+	padding-left: unset
+}
+.contact-item ul li i {
+	right: 0;
+	left: auto
+}
+.user-all-form .contact-form .forget {
+
+}
+.coming-soon-area .coming-soon-content .newsletter-form button {
+	left: 0;
+	right: auto
+}
+.coming-soon-area .coming-soon-content .newsletter-form .input-newsletter {
+	padding-right: 15px;
+	padding-left: unset
+}
+.contact-form .form-group .form-control {
+	text-align: right
+}
+.footer-widget .footer-form .form-group .form-control:hover {
+	text-align: right
+}
+@media only screen and (max-width:767px) {
+	.ml-45 {
+		margin-right: 0;
+		margin-left: unset
+	}
+	.mean-container a.meanmenu-reveal {
+		left: 15px!important;
+		right: auto!important
+	}
+	.mean-container .mean-nav ul li a.mean-expand {
+		width: 90%
+	}
+	.mean-container .mean-nav ul li a.mean-expand {
+		text-align: left;
+		left: 15px;
+		right: auto
+	}
+	.mean-container .mean-nav ul li a {
+		text-align: right
+	}
+	.mobile-nav .logo {
+		right: 15px!important;
+		left: auto!important
+	}
+	.header-right {
+
+	}
+	.header-right ul {
+
+	}
+	.header-right ul li {
+
+	}
+	.language-list {
+
+	}
+	.banner-area::before {
+		background-image: linear-gradient(to right, #ffffff, #ffffff4a)
+	}
+	.banner-content {
+		margin-left: auto;
+		margin-right: auto
+	}
+	.banner-another {
+		margin-right: auto;
+		margin-left: auto
+	}
+	.banner-img {
+		margin-right: auto;
+		margin-left: auto
+	}
+	.about-content {
+		margin-right: 0;
+		margin-left: auto
+	}
+	.about-img-2 {
+		margin-left: auto;
+		margin-right: auto
+	}
+	.specialty-list .specialty-list-card {
+
+	}
+	.specialty-list .specialty-list-card i {
+
+	}
+	.room-card-two .room-card-img {
+
+	}
+	.room-card-two .room-card-content ul li {
+
+	}
+	.testimonials-img {
+
+	}
+	.testimonials-img .content {
+
+	}
+	.testimonials-content {
+
+	}
+	.testimonials-img-two {
+
+	}
+	.service-item-two .content {
+		padding-right: 0;
+		padding-left: unset
+	}
+	.service-item-two i {
+		right: 0;
+		left: 0
+	}
+	.restaurant-item .restaurant-img {
+		padding-right: 15px;
+		padding-left: 15px
+	}
+	.blog-card .blog-img {
+		padding-right: 15px;
+		padding-left: 15px
+	}
+	.blog-item .content ul li {
+
+	}
+	.blog-article .comments-wrap ul li {
+		padding-right: 30px;
+		padding-left: 30px
+	}
+	.blog-article .comments-wrap ul li img {
+		right: 0;
+		left: 0
+	}
+	.blog-article .comments-wrap ul li a {
+		left: 0;
+		right: 0
+	}
+	.contact-item ul li {
+		padding-right: 60px;
+		padding-left: unset
+	}
+	.user-all-form .contact-form .forget {
+
+	}
+	.user-all-form {
+
+	}
+	.footer-widget.pl-5, .footer-widget.px-5 {
+		padding-right: 0!important;
+		padding-left: unset!important
+	}
+	.text-align1 {
+		text-align: center
+	}
+	.text-align2 {
+		text-align: center
+	}
+}
+@media(min-width:576px) {
+	.offset-sm-3 {
+		margin-left: 25%;
+		margin: auto
+	}
+}
+@media only screen and (min-width:576px) and (max-width:767px) {
+	.user-all-form .contact-form .forget {
+
+	}
+}
+@media only screen and (min-width:768px) and (max-width:991px) {
+	.mean-container a.meanmenu-reveal {
+		left: 15px!important;
+		right: auto!important
+	}
+	.mean-container .mean-nav ul li a.mean-expand {
+		width: 90%
+	}
+	.mean-container .mean-nav ul li a.mean-expand {
+		text-align: left;
+		left: 0;
+		right: auto
+	}
+	.mean-container .mean-nav ul li a {
+		text-align: right
+	}
+	.mobile-nav .logo {
+		right: 15px!important;
+		left: auto!important
+	}
+	.header-right {
+
+	}
+	.header-right ul {
+
+	}
+	.header-right ul li {
+
+	}
+	.banner-area::before {
+		background-image: linear-gradient(to right, #ffffff, #ffffff4a)
+	}
+	.banner-content {
+		margin-left: auto;
+		margin-right: auto
+	}
+	.banner-another {
+		margin-right: auto;
+		margin-left: auto
+	}
+	.banner-img {
+		margin-right: auto;
+		margin-left: auto
+	}
+	.about-content {
+		margin-right: 0;
+		margin-left: auto
+	}
+	.testimonials-img {
+
+	}
+	.testimonials-img .content {
+
+	}
+	.testimonials-content {
+
+	}
+	.testimonials-img-two {
+
+	}
+	.service-item-two .content {
+		padding-right: 0;
+		padding-left: unset
+	}
+	.service-item-two i {
+		right: 0;
+		left: 0
+	}
+	.footer-widget.pl-5, .footer-widget.px-5 {
+		padding-right: 0!important;
+		padding-left: unset!important
+	}
+}
+@media(min-width:768px) {
+	.offset-md-3 {
+		margin-left: 25%;
+		margin: auto
+	}
+}
+@media only screen and (min-width:992px) and (max-width:1199px) {
+	.banner-another {
+		max-width: 430px
+	}
+	.banner-another h1 {
+		font-size: 42px
+	}
+	.banner-another .banner-shape {
+		right: -40px;
+		left: auto
+	}
+	.banner-another .banner-shape img {
+		height: 515px
+	}
+	.book-img .book-shape {
+
+	}
+	.ability-img::before {
+
+	}
+	.room-card-two .room-card-content ul li {
+
+	}
+	.room-card-two .room-card-content ul li i {
+
+	}
+	.blog-item .content ul li {
+
+	}
+}
+@media only screen and (min-width:1350px) and (max-width:1699px) {
+	.ability-img {
+
+	}
+	.book-img-2 {
+
+	}
+	.ability-img-2 {
+
+	}
+}
+@media only screen and (min-width:1700px) {}
+@media only screen and (min-width:1800px) {}

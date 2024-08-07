@@ -1,0 +1,360 @@
+﻿{% load static %}
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML5,CSS3,HTML,Template,multi-page,Atoli - Hotel & Resorts HTML Template">
+    <meta name="description" content="Atoli - Hotel & Resorts HTML Template">
+    <meta name="author" content="Barat Hadian">
+
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.rtl.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/fonts/flaticon.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/boxicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/meanmenu.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/jquery-ui.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/rtl.css' %}">
+                                    <link rel="stylesheet" href="https://unpkg.com/@majidh1/jalalidatepicker/dist/jalalidatepicker.min.css">
+    <script type="text/javascript"
+            src="https://unpkg.com/@majidh1/jalalidatepicker/dist/jalalidatepicker.min.js"></script>
+
+
+    <link rel="stylesheet" href="{% static 'assets/datepicker-jalali/css/persianDatepicker-default.css' %}"/>
+
+    <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
+    <title> سایت رزرو هتل و اقامتگاه مسافرتی</title>
+</head>
+<body>
+
+
+<header class="top-header top-header-bg">
+    <div class="container">
+        <div class="row align-items-center"
+        <div class="col-lg-9 col-md-10">
+            <div class="header-right">
+                <ul>
+                    <li>
+                        <i class='bx bx-home-alt'></i>
+                        <a href="#">ایران ، تهران ، میدان آزادی ، خیابان 9</a>
+                    </li>
+                    <li>
+                        <i class='bx bx-phone-call'></i>
+                        <a href="tel:+1-(123)-456-7890">+1 (123) 456 7890</a>
+                    </li>
+                    <li>
+                        <i class='bx bx-envelope'></i>
+                        <a href="mailto: hello@atoli.com"> hello@atoli.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</header>
+
+
+<div class="navbar-area">
+
+    <div class="mobile-nav">
+        <img src="{% static 'assets/img/logos/logo-3.png' %}" alt="Logo">
+    </div>
+
+    <div class="main-nav nav-three">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light ">
+                <img src="{% static 'assets/img/logos/logo-3.png' %}" alt="Logo">
+                <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">
+                                خانه
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:index' %}" class="nav-link ">
+                                        صفحه اصلی
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'app:about' %}" class="nav-link ">
+                                درباره ما
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                صفحات
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:team' %}" class="nav-link">
+                                        تیم ما
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'app:frequently-questions' %}" class="nav-link">
+                                        سوالات متداول
+                                    </a>
+                                </li>
+
+
+                                <li class="nav-item">
+                                    <a href="{% url 'app:show_comment' %}" class="nav-link">
+                                        نطرات مشتریان
+                                    </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="{% url 'app:terms_condition' %}" class="nav-link">
+                                        قوانین و ضوابط
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'app:privacy_policy' %}" class="nav-link">
+                                        حریم خصوصی
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                خدمات
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:services_1' %}" class="nav-link">
+                                        خدمات تفریحی ما
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="{% url 'app:room' %}" class="nav-link">
+                                اتاق ها
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a href="{% url 'app:room' %}" class="nav-link active">
+                                        مشاهده اتاق ها
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{% url 'app:contact' %}" class="nav-link">
+                                تماس با ما
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="nav-btn">
+                        <a href="{% url 'app:room' %}" class="default-btn btn-bg-three">مشاهده اتاق ها</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+
+<div class="inner-banner inner-bg10">
+    <div class="container">
+        <div class="inner-title">
+            <ul>
+                <li>
+                    <a href="{% url 'app:index' %}">خانه</a>
+                </li>
+                <li><i class='bx bx-chevron-left'></i></li>
+                <li>جزئیات اتاقها</li>
+            </ul>
+            <h3>جزئیات اتاقها</h3>
+        </div>
+    </div>
+</div>
+
+
+<div class="room-details-area pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="room-details-side">
+                    <div class="side-bar-form">
+                        <h3>برگه رزرو </h3>
+                        <form method="POST">
+                            {% csrf_token %}
+                            <div class="row align-items-center">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>تاریخ ورود</label>
+                                        <div class="input-group">
+                                            <input data-jdp type="text" name="start_date" required
+                                                   class="form-control" placeholder="روز/ماه/سال">
+                                            <span class="input-group-addon"></span>
+                                        </div>
+                                        <i class='bx bxs-calendar'></i>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>تاریخ خروج</label>
+                                        <div class="input-group">
+                                            <input  type="text" data-jdp name="finish_date" required
+                                                   class="form-control" placeholder="روز/ماه/سال">
+                                            <span class="input-group-addon"></span>
+                                        </div>
+                                        <i class='bx bxs-calendar'></i>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>نام</label>
+                                        <input type="text" name="name" required class="form-control" placeholder="نام">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label>نام خانوادگی</label>
+                                        <input type="text" name="family" required class="form-control"
+                                               placeholder="نام خانوادگی">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div style="display:flex; align-items: center; margin-bottom: .6rem">
+                                        <label>ایا میخواهید غذا سفارش دهید؟</label>
+                                        <input type="checkbox" name="food" value="True" class=""
+                                               style="width: 1.5rem; height: 1.5rem; margin-right: .5rem" border-radius:
+                                               10px;>
+                                    </div>
+                                </div>
+                                {% include "messages.html" %}
+
+                                <div class="col-lg-12 col-md-12">
+                                    <button type="submit" class="default-btn btn-bg-three border-radius-5">
+                                        رزرو کن
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                    <div class="side-bar-plan">
+                        <h3>امکانات طرح</h3>
+                        <ul>
+                            {% for op in option %}
+                            <li><a href="#">{{ op }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="room-details-article">
+                    <!--                    <div class="room-details-slider owl-carousel owl-theme">-->
+                    <div class="">
+                        <div class="room-details-item">
+                            <img src="{{ image.url }}" alt="Images">
+                        </div>
+                    </div>
+
+
+                    <div class="container">
+                        <h4>لیست تاریخ های رزرو شده این اتاق</h4>
+
+                        <div class="row align-items-start border border-danger">
+                            <div class="col">
+                                <br>
+
+
+                                {% for reservation in reservations %}
+                                {% if reservation %}
+                                <p class="border border-danger">
+                                    این اتاق از این تاریخ: {{ reservation.start_date }}
+                                </p>
+                                {% else %}
+                                <h>اتاق برای تمامی تاریخ ها قابل رزرو است</h>
+                                {% endif %}
+                                {% endfor %}
+
+                            </div>
+
+                            <div class="col">
+                                <br>
+                                {% for reservation in reservations %}
+                                <p class="border border-danger">تا این تاریخ رزرو شده است: {{ reservation.finish_date }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="room-details-title">
+                    <h2>{{ name }}</h2>
+                    <ul>
+                        <li>
+                            قیمت: {{ price }} تومان / شب
+                        </li>
+                    </ul>
+                </div>
+                <div class="room-details-content">
+                    <p>
+                        ظرفیت {{ capacity }} نفر
+                    </p>
+                    <p>
+                        طبقه: {{ floor }}
+                    </p>
+                    <p>
+                        شماره اتاق: {{ number }}
+                    </p>
+                    <p>
+                        توضیحات: {{ description }}
+                    </p>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+{% include "base/footer.html" %}
+
+</body>
+</html>
+
+<script>
+    jalaliDatepicker.startWatch();
+</script>
