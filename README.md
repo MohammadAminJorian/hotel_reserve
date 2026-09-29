@@ -185,7 +185,7 @@ http://127.0.0.1:8000/
 ```text
 hotel/
 │
-├── hotel_reserve/
+├── hotel/
 │   ├── settings.py
 │   ├── urls.py
 │   └── ...
@@ -467,7 +467,7 @@ http://127.0.0.1:8000/
 ```text
 hotel/
 │
-├── hotel_reserve/
+├── hotel/
 │   ├── settings.py
 │   ├── urls.py
 │   └── ...
