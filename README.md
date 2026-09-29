@@ -125,7 +125,7 @@ Follow the steps below to run the project locally.
 
 ```bash
 git clone https://github.com/MohammadAminJorian/hotel_reserve.git
-cd hotel_reserve
+cd hotel
 ```
 
 ### 2️⃣ Create a virtual environment
@@ -183,7 +183,7 @@ http://127.0.0.1:8000/
 # ⚙️ Project Structure
 
 ```text
-hotel_reserve/
+hotel/
 │
 ├── hotel_reserve/
 │   ├── settings.py
@@ -407,7 +407,7 @@ If you found this project interesting, consider giving it a ⭐ on GitHub.
 
 ```bash
 git clone https://github.com/MohammadAminJorian/hotel_reserve.git
-cd hotel_reserve
+cd hotel
 ```
 
 ### 2️⃣ ساخت محیط مجازی
@@ -465,7 +465,7 @@ http://127.0.0.1:8000/
 # ⚙️ ساختار پروژه
 
 ```text
-hotel_reserve/
+hotel/
 │
 ├── hotel_reserve/
 │   ├── settings.py
